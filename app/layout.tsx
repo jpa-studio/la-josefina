@@ -36,7 +36,8 @@ export default function RootLayout({
       className={`${playfair.variable} ${dmSans.variable} scroll-smooth h-full antialiased`}
     >
       <head>
-        <link rel="icon" type="image/png" href="/icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/icon.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
       </head>
       <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>
