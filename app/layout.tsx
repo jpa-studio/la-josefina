@@ -19,7 +19,8 @@ export const metadata: Metadata = {
   description:
     "Chivitería La Josefina en Colonia del Sacramento. Chivitos, milanesas, hamburguesas y más. Pedí online por PedidosYa.",
   icons: {
-    icon: '/favicon.ico',
+    icon: '/icon.png',
+    shortcut: '/icon.png',
     apple: '/apple-touch-icon.png',
   },
 };
@@ -34,6 +35,9 @@ export default function RootLayout({
       lang="es"
       className={`${playfair.variable} ${dmSans.variable} scroll-smooth h-full antialiased`}
     >
+      <head>
+        <link rel="icon" type="image/png" href="/icon.png" />
+      </head>
       <body className="min-h-full flex flex-col font-sans">{children}</body>
     </html>
   );

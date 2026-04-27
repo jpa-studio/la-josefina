@@ -12,10 +12,8 @@ export async function generateMetadata({
   return {
     title: 'Chivitería La Josefina',
     icons: {
-      icon: [
-        { url: '/icon.png', type: 'image/png', sizes: '32x32' },
-        { url: '/favicon.ico', sizes: 'any' },
-      ],
+      icon: '/icon.png',
+      shortcut: '/icon.png',
       apple: '/apple-touch-icon.png',
     },
   };
